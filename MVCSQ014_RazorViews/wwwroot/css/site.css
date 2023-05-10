@@ -1,0 +1,120 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+
+/** My Styles **/
+
+.vertical-nav-bar-panel{
+    width: 250px;
+    background: #ccc;
+    height: 100vh;
+    position:absolute;
+    padding: 20px;
+}
+
+.my-container{
+    border: 1px solid #eee;
+    padding: 40px;
+    margin-left:260px;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-card {
+    width: 250px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid grey;
+    margin: 10px;
+}
+.card-body, .card-body, .card-foot {
+    width: 100%;
+    padding: 10px;
+}
+.card-head{
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+}
+.card-body{
+    height: 200px;
+    padding: 10px
+}
+
+.card-foot {
+    font-size: 10px;
+}
+
+.inputs {
+    margin: 10px;
+}
+
+.validation-msg {
+    font-size: 10px;
+    color: #a00;
+}
+
+.auth-box{
+    max-width: 400px;
+    min-width: 250px;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+}
+.alt-snack-bar{
+    font-size: 12px;
+    color: skyblue;
+    text-decoration: none;
+}
+
+.nav-panel, .loggedIn-user-thumbnail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table{
+    width: 80%;
+    margin:10px;
+    margin-bottom:20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.table, .table > tr, .table > th, .table > td {
+    border: 1px solid grey;
+}
+
+.big-container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+}
+
+.big-container img{
+    max-width:400px;
+    min-width:200px;
+    align-items:center;
+    align-self:center;
+}

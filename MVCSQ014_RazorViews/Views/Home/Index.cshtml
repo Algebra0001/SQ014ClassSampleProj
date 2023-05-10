@@ -1,0 +1,48 @@
+﻿@model List<BookItemViewModel>
+@{
+    ViewData["Title"] = "Home page";
+    var defaultPix = "~/images/book1.jpg";
+}
+
+<div class="vertical-nav-bar-panel">
+    <div>
+        <a asp-action="#" asp-controller="#">Add New Book</a>
+    </div>
+    <div>
+        <a asp-action="Index" asp-controller="Home">View All Books</a>
+    </div>
+
+    @if (authService.AuthorizeAsync(User, "AdminPolicy").Result.Succeeded)
+    {
+        <div>
+            <a asp-action="ManageUserRoles" asp-controller="Account">Users and Roles</a>
+        </div>
+    }
+</div>
+
+<div class="my-container">
+    <h3>List of Books</h3>
+    <div class="inner-container">
+        @foreach (var bookitem in Model)
+        {
+            <div class="my-card">
+                <a asp-action="SingleBook" asp-controller="Book" asp-route-id="@bookitem.Id">
+                    <div class="card-head">@bookitem.Name</div>
+
+                    <div class="card-body">
+                        <div class="book-portrait">
+                            <img src = "@defaultPix" asp-append-version="true" />
+                        </div>
+                    </div>
+
+                    <div class="card-foot">
+                        <div>Author: @bookitem.Author</div>
+                        <div>ISBN: @bookitem.ISBN</div>
+                        <div>Pages: @bookitem.TotalPages</div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+   
+</div>

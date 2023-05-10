@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MVCSQ014_RazorViews.props" />
+</Project>

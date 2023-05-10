@@ -1,0 +1,9 @@
+﻿@using MVCSQ014_RazorViews
+@using MVCSQ014_RazorViews.Models
+@using MVCSQ014_RazorViews.ViewModels
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.AspNetCore.Identity;
+@using Microsoft.AspNetCore.Authorization;
+@inject SignInManager<IdentityUser> signInManager
+@inject UserManager<IdentityUser> userManager
+@inject IAuthorizationService authService;

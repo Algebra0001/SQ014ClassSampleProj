@@ -1,0 +1,62 @@
+﻿@model UserRolesViewModel
+@{
+    var targetUserErrorMessage = ViewBag.ErrorMsg;
+}
+<h3>Users and Roles</h3>
+
+@if (!string.IsNullOrWhiteSpace(targetUserErrorMessage))
+{
+    <div>@targetUserErrorMessage</div>
+}
+
+<form method="get">
+    <input  placeholder="Enter a search term" />
+</form>
+
+<br />
+<br />
+
+@if(Model.UserRolesDetails.Any()){
+    <table class="table">
+        <tableHead>
+            <tr>
+                <th>User name</th>
+                <th>Is Regular</th>
+                <th>Is editor</th>
+                <th>Is Admin</th>
+            </tr>
+        </tableHead>
+        <tableBody>
+            @foreach (var userRole in Model.UserRolesDetails)
+            {
+                @if (User.Identity.Name != null)
+                {
+                    @if (!User.Identity.Name.Equals(userRole.UserName))
+                    {
+                        <form method="post" asp-action="ManageUserRoles" asp-controller="Account">
+                        <tr>
+                                
+                            <td>@userRole.UserName</td>
+                            <td> <input asp-for="RoleToEdit.IsRegular"  /> </td>
+                            <td> <input asp-for="RoleToEdit.IsEitor" /> </td>
+                            <td> <input asp-for="RoleToEdit.IsAdmin" /> </td>
+                            <td>
+                                <button type="submit" class="btn btn-primary">Edit Role</button>
+                            </td>
+                        </tr>
+                        </form>
+                    }
+                }
+            }
+        </tableBody>
+    </table>
+    
+}
+else{
+    <div>
+        No record added yet!
+    </div>
+}
+
+<br />
+<partial name="_Pagination" />
