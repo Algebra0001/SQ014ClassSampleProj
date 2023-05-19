@@ -2187,11 +2187,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews.csproj",
+      "projectUniqueName": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews.csproj",
       "projectName": "MVCSQ014_RazorViews",
-      "projectPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews.csproj",
+      "projectPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews.csproj",
       "packagesPath": "C:\\Users\\hp Envy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews\\obj\\",
+      "outputPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\MVCSQ014_RazorViews\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

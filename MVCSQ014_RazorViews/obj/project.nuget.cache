@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "81O0ua4djF0to4EJB7MfU5p50/++ey0zkbs/SKpiWuHaOYmAqXbQZ22AD2IdkLBr1OYlhhmspqal0Vay0k0KwA==",
+  "dgSpecHash": "1EAKky9R+PW0pHbfAUpcuhI79oi/Pn6tUKH+zRG8mu9ckDkS/MEYPBoHQfPsg4Fv0im1nam4L+LDzvqFEyYNAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews.csproj",
+  "projectFilePath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\MVCSQ014_RazorViews\\MVCSQ014_RazorViews.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp Envy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hp Envy\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.1\\microsoft.aspnetcore.cryptography.internal.6.0.1.nupkg.sha512",

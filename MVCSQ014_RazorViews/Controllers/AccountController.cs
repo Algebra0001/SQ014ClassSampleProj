@@ -210,6 +210,7 @@ namespace MVCSQ014_RazorViews.Controllers
 
         [HttpGet]
         [Authorize(Policy = "AdminPolicy")]
+        [Authorize(Policy = "CanEdit")]
         public async Task<IActionResult> ManageUserRoles()
         {
             var userRolesDetails = new UserRolesViewModel();
@@ -234,8 +235,27 @@ namespace MVCSQ014_RazorViews.Controllers
 
         [HttpPost]
         [Authorize(Policy = "AdminPolicy")]
-        public async Task<IActionResult> ManageUserRoles(UserRolesViewModel model)
+        public async Task<IActionResult> ManageUserRoles(UserRolesViewModel model, string username)
         {
+            var user = await userManager.FindByNameAsync(username);
+            if (user != null)
+            {
+                var userRoles = await userManager.GetRolesAsync(user);
+                if(userRoles.Any())
+                {
+                    await userManager.RemoveFromRolesAsync(user, userRoles);
+                }
+
+                var newRoles = new List<string>();
+                if (model.RoleDetail.IsRegular) { newRoles.Add("regular"); }
+                if (model.RoleDetail.IsEitor) { newRoles.Add("editor"); }
+                if (model.RoleDetail.IsAdmin) { newRoles.Add("admin"); }
+
+                await userManager.AddToRolesAsync(user, newRoles);
+
+                return RedirectToAction("ManageUserRoles");
+            }
+            ViewBag.ErrMsg = "Username is missing";
             return View();
         }
     }

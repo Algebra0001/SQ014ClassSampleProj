@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SimpleBookAPI\\SimpleBookAPI.csproj": {}
+    "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\SimpleBookAPI\\SimpleBookAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SimpleBookAPI\\SimpleBookAPI.csproj": {
+    "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\SimpleBookAPI\\SimpleBookAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SimpleBookAPI\\SimpleBookAPI.csproj",
+        "projectUniqueName": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\SimpleBookAPI\\SimpleBookAPI.csproj",
         "projectName": "SimpleBookAPI",
-        "projectPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SimpleBookAPI\\SimpleBookAPI.csproj",
+        "projectPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\SimpleBookAPI\\SimpleBookAPI.csproj",
         "packagesPath": "C:\\Users\\hp Envy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SimpleBookAPI\\obj\\",
+        "outputPath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\SimpleBookAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

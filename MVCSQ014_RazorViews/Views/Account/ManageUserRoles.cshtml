@@ -33,13 +33,12 @@
                 {
                     @if (!User.Identity.Name.Equals(userRole.UserName))
                     {
-                        <form method="post" asp-action="ManageUserRoles" asp-controller="Account">
+                        <form method="post" asp-action="ManageUserRoles" asp-controller="Account" asp-route-username="@userRole.UserName">
                         <tr>
-                                
                             <td>@userRole.UserName</td>
-                            <td> <input asp-for="RoleToEdit.IsRegular"  /> </td>
-                            <td> <input asp-for="RoleToEdit.IsEitor" /> </td>
-                            <td> <input asp-for="RoleToEdit.IsAdmin" /> </td>
+                            <td> <input asp-for="@userRole.IsRegular" /> <input asp-for="RoleDetail.IsRegular" /> </td>
+                            <td> <input asp-for="@userRole.IsEitor" /> <input asp-for="RoleDetail.IsEitor" /></td>
+                            <td> <input asp-for="@userRole.IsAdmin" /> <input asp-for="RoleDetail.IsAdmin" /> </td>
                             <td>
                                 <button type="submit" class="btn btn-primary">Edit Role</button>
                             </td>
@@ -50,13 +49,36 @@
             }
         </tableBody>
     </table>
-    
+ 
 }
 else{
     <div>
         No record added yet!
     </div>
 }
+<style>
+    #RoleDetail_IsRegular, #RoleDetail_IsEitor, #RoleDetail_IsAdmin {
 
+    }
+</style>
 <br />
 <partial name="_Pagination" />
+@*<script>
+    var regularBtn = document.querySelector("#userRole_IsRegular");
+    var regularMainBtn = document.querySelector("#RoleDetail_IsRegular");
+    var editorBtn = document.querySelector("#userRole_IsEitor");
+    var editorMainBtn = document.querySelector("#RoleDetail_IsEitor");
+    var adminBtn = document.querySelector("#userRole_IsAdmin");
+    var adminMainBtn = document.querySelector("#RoleDetail_IsAdmin");
+    
+    regularBtn.addEventListener("Click", ()=>{
+        //regularMainBtn.checked = "check";
+        alert("HI")
+    })
+    editorBtn.addEventListener("Click", () => {
+        //editorMainBtn.checked = "check";
+    })
+    adminBtn.addEventListener("Click", () => {
+        //adminMainBtn.checked = "check";
+    })
+</script>*@

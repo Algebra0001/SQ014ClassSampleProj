@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3czx6jy9Xcw3buSwzNJskcykUUaJ3Vf99QsIKBRX6ZFxgn7cTEKkf0NJi81sWnccSN+UNLu83CirQrHLcEX5jQ==",
+  "dgSpecHash": "G3tIO5StJEwaVSXrbSJup/6Ix6MTQ8vhjQ3hSbB4ZnFkwQTvNKPWJa31GqoZCLs42Velq5fcxDWN/Hu7DWpKsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SimpleBookAPI\\SimpleBookAPI.csproj",
+  "projectFilePath": "C:\\Users\\hp Envy\\source\\repos\\MVCSQ014_RazorViews\\SQ014ClassSampleProj\\SimpleBookAPI\\SimpleBookAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp Envy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hp Envy\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

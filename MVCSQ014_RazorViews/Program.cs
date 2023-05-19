@@ -13,7 +13,10 @@ builder.Services.AddScoped<IBookService, BookService>();
 ServiceExtensions.AddDbContext(builder.Services, builder);
 ServiceExtensions.AddIdentity(builder.Services);
 ServiceExtensions.AddAuth(builder.Services);
-
+builder.Services.AddAuthorization(option =>
+{
+    option.AddPolicy("CanEdit", policy => policy.RequireClaim("CanEdit", new string[] { "True" }));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
